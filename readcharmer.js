@@ -1,29 +1,18 @@
 const fs = require('fs');
 
-// const charmeremployees = "charmeremployees.txt";
+const charmeremployees = "charmeremployees.txt";
 
-// let employees = fs.readFileSync(charmeremployees, 'utf8');
+let employees = fs.readFileSync(charmeremployees, 'utf8');
 
-// console.log(employees);
+console.log(employees);
 
 
 
-const charmersalaries = "charmersalaries.txt";
+// const charmersalaries = "charmersalaries.txt";
 
-let salaries = fs.readFileSync(charmersalaries, 'utf8', function(error, data){
-    if(error) throw error;
-   
-  var array = data; 
-    
- for(var i = 0; i < array.length; i++){
-     console.log(array[i]);
- }
- 
- 
-//  console.log(myArray);
-    
-    
-});
+// let salaries = fs.readFileSync(charmersalaries, 'utf8');
+
+// console.log(charmersalaries);
 
 
 
@@ -57,3 +46,10 @@ let salaries = fs.readFileSync(charmersalaries, 'utf8', function(error, data){
 // let departmentlist = fs.readFileSync(charmerdepartmentlist, 'utf8');
 
 // console.log(departmentlist);
+
+
+
+
+//  cat charmersalaries.txt | sed -n '/9999/p'
+
+// cat filename.txt | sed -n '/9999/p'
