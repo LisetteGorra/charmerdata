@@ -1,4 +1,4 @@
-['d001','Marketing'],
+[['d001','Marketing'],
 ['d002','Finance'],
 ['d003','Human Resources'],
 ['d004','Production'],
@@ -6,4 +6,4 @@
 ['d006','Quality Management'],
 ['d007','Sales'],
 ['d008','Research'],
-['d009','Customer Service'];
+['d009','Customer Service']],
