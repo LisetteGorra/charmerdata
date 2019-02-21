@@ -5,6 +5,14 @@ var fs = require("fs");
     //Push array data into an array to form multi-d arrays 
 
 
+//Single dimension arrays
+var departmentID = [];
+var departments = [];
+
+//Multi dimension array
+var employeeID = [[]];
+var salaries =[[]];
+var employeeName = [[]];
 
 
 
