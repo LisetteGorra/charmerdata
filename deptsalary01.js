@@ -14,7 +14,24 @@ var employeeID = [[]];
 var salaries =[[]];
 var employeeName = [[]];
 
-
+// Proccess the file charmerdepartments.txt
+fs.readFile('charmerdepartments.txt', 'utf8', function(error, data){
+    if (error) throw error;
+    
+    // console logging the original data
+     console.log("dirty:");
+    console.log(data);
+    
+    
+    //Remove the uneeded string from the first line 
+    var cleanDeptData = data.replace(/INSERT INTO `departments` Values/g, "")
+   
+   //console logging the cleaned data
+    console.log("cleaned:");
+    console.log(cleanDeptData);
+    
+    
+});
 
 
 

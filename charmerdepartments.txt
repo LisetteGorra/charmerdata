@@ -1,15 +1,4 @@
-var departments = ["management","training","smartPeople"]
-var departmentID = ["d01","d02","d03"];
-var employeeID = [[101, 102, 103],[201, 202, 203],[1005, 1111, 303]];
-var employeeName = [["Max", "Aurthur", "Riley"], ["Zoe", "Jade", "Norma"], ["Jed","Chris","Dante"]];
-
-employeeID[2][1] = 1003;
-
-
-
-
-
-[10001,'d005','1986-06-26','9999-01-01'],
+INSERT INTO `departments` Values[10001,'d005','1986-06-26','9999-01-01'],
 [10002,'d007','1996-08-03','9999-01-01'],
 [10003,'d004','1995-12-03','9999-01-01'],
 [10004,'d004','1986-12-01','9999-01-01'],
