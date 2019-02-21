@@ -61,5 +61,20 @@ fs.readFile('charmerdepartments.txt', 'utf8', function(error, data){
 
 
 
+// push 
 
+  for (var i = 0; i < deptDataArray.length; i++) {
+        var deptId = deptDataArray[i].slice(2,6);
+        console.log(deptId);
+        
+        departmentID.push(deptId);
 
+    }
+    
+    turn into 
+    
+     for (var i = 0; i < deptDataArray.length; i++) {
+        departmentID.push(deptDataArray[i].slice(2,6));
+
+    }
+    
