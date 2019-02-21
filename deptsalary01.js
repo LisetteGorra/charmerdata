@@ -15,20 +15,36 @@ var salaries =[[]];
 var employeeName = [[]];
 
 // Proccess the file charmerdepartments.txt
-fs.readFile('charmerdepartments.txt', 'utf8', function(error, data){
+fs.readFile('departmentlist.txt', 'utf8', function(error, data){
     if (error) throw error;
     
     // console logging the original data
-     console.log("dirty:");
-    console.log(data);
+    //  console.log("dirty:");
+    // console.log(data);
     
     
     //Remove the uneeded string from the first line 
     var cleanDeptData = data.replace(/INSERT INTO `departments` Values/g, "")
    
-   //console logging the cleaned data
-    console.log("cleaned:");
-    console.log(cleanDeptData);
+   //convert cleaned data into a temporary array. Each line will be an array element
+   
+   
+ //  console logging the cleaned data
+    // console.log("cleaned:");
+    // console.log(cleanDeptData);
+    
+    var deptDataArray = cleanDeptData.split('\n');
+    //deptDataArray.shift(); to clean anything above line 1 that you dont want 
+    // console.log(deptDataArray);
+
+    //grab the department id and the department name and push them into their respective single -d arrays 
+
+
+    for (var i = 0; i < deptDataArray.length; i++) {
+        var deptId = deptDataArray[i].slice(2,6);
+        console.log(deptId);
+
+    }
     
     
 });
