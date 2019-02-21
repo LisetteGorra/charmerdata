@@ -39,11 +39,15 @@ fs.readFile('departmentlist.txt', 'utf8', function(error, data){
 
     //grab the department id and the department name and push them into their respective single -d arrays 
     for (var i = 0; i < deptDataArray.length; i++) {
+        // departmentID.push(deptDataArray[i].slice(2,6));
+        
         departmentID.push(deptDataArray[i].slice(2,6));
+        departments.push(deptDataArray[i].slice(9,-3));
 
     }
     
     console.log(departmentID);
+    console.log(departments);
     
 });
 
